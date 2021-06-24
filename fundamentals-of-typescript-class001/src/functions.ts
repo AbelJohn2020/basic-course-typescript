@@ -34,3 +34,27 @@ let createSamePicture = (title: string, date: string, size:SquareSize): object =
 
 const samePicture = createSamePicture("Traveling to Russia", "2024-02-05", newLargePicture);
 console.log("samePicture", samePicture);
+
+
+// TIPO DE RETORNO CON TS
+
+type TypeFunction = never | string;
+
+function newHandleError(code: number, message: string): TypeFunction {
+    if(message === "error") {
+        throw new Error(`${message}. Code error: ${code}`);
+    } else {
+        return "An error has occurred";
+    }
+}
+
+
+try {
+    let result = newHandleError(200, "OK");
+    console.log("result", result);
+    
+    let otherResult = newHandleError(400, "error");
+    console.log("otherResult", otherResult); 
+} catch(e) {
+    console.log(e)
+}
