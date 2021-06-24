@@ -52,9 +52,12 @@ function newHandleError(code: number, message: string): TypeFunction {
 try {
     let result = newHandleError(200, "OK");
     console.log("result", result);
-    
+
     let otherResult = newHandleError(400, "error");
     console.log("otherResult", otherResult); 
 } catch(e) {
     console.log(e)
 }
+
+
+// null y undefined SE CONSIDERAN COMO SUBTIPOS PARA void Y LOS OTROS SUBTIPOS QUESE HABIAN ESTUDIADO ANTERIORMENTE.

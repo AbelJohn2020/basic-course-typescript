@@ -39,3 +39,4 @@ try {
 catch (e) {
     console.log(e);
 }
+// null y undefined SE CONSIDERAN COMO SUBTIPOS PARA void Y LOS OTROS SUBTIPOS QUESE HABIAN ESTUDIADO ANTERIORMENTE.
