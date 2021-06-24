@@ -10,5 +10,6 @@ otherId = 1;
 otherId = '1';
 console.log('otherId', otherId);
 var surprise = 'Hello typescript!';
-var res = surprise.substring(6);
+// surprise.sayHello();    // Type Error
+var res = surprise.substring(6); // Type Error
 console.log('res', res);

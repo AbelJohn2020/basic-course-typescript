@@ -14,6 +14,7 @@ otherId = '1';
 console.log('otherId', otherId);
 
 let surprise: any = 'Hello typescript!';
-const res = surprise.substring(6);
+// surprise.sayHello();    // Type Error
+const res = surprise.substring(6);  // Type Error
 
-console.log('res', res)
+console.log('res', res);
