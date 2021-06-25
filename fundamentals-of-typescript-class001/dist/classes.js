@@ -34,3 +34,8 @@ var anotherNewAlbum = new NewAlbum(1, "My love in Moscu");
 var anotherNewPucture = new ThePicture(1, "I like this city", ThePhotoOrientation.Square);
 anotherNewAlbum.addPicture(anotherNewPucture);
 console.log("anotherNewAlbum", anotherNewAlbum);
+// ENTER TO THE PUBLIC MEMBER
+anotherNewPucture.id = 100;
+anotherNewPucture.title = "Walking to the street with she";
+anotherNewAlbum.title = "The first date was awesome!";
+console.log("anotherNewAlbum", anotherNewAlbum);
